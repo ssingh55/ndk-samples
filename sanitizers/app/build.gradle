@@ -46,6 +46,7 @@ android {
         // buildType abiFilters will actually have an effect. Enable all ABIs,
         // since that's what we want for most of the sanitizers.
         debug {
+            debuggable true
             ndk {
                 abiFilters(
                     "arm64-v8a",
@@ -62,6 +63,7 @@ android {
         }
 
         release {
+            debuggable false
             ndk {
                 abiFilters(
                     "arm64-v8a",
